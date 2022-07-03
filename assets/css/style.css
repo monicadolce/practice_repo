@@ -1,0 +1,257 @@
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #d9dcd6;
+}
+
+header {
+  padding: 20px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  background-color: #3c2a7c;
+  color: #ffffff;
+}
+
+header h1 {
+  display: inline-block;
+  font-size: 48px;
+}
+
+header h1 .ni, .mas{
+  color: #d760d3;
+}
+
+header nav {
+  padding-top: 15px;
+  margin-right: 20px;
+  float: right;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav ul li {
+  display: inline-block;
+  margin-left: 25px;
+}
+
+a {
+  color: #e1e1f3;
+  text-decoration: none;
+
+}
+
+p {
+  font-size: 16px;
+}
+
+figure {
+  height: 300px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("../images/brh.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.float-left {
+  float: left;
+  margin-right: 25px;
+} 
+
+.profile-img {
+  height: 100px;
+  width: 75px;
+}
+
+.application-img {
+  display: block;
+  margin: 10px auto;
+  max-width: 160px;
+}
+
+.float-right {
+  float: right;
+  /* margin-left: 300px; */
+}
+
+.column {
+  float: right;
+  width: 20%;
+  padding: 5px;
+}
+.column p{
+  text-align: center;
+}
+
+main {
+  width: 75%;
+  display: inline-block;
+  margin-left: 20px;
+}
+
+.icons {
+  margin-right: 10px;
+  padding: 20px;
+  clear: both;
+  float: right;
+  width: 20%;
+  height: 100%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #ba25bd;
+}
+
+.icon-github {
+  margin-bottom: 32px;
+  color: #ffffff;
+}
+
+.icon-linkedin {
+  margin-bottom: 32px;
+  color: #ffffff;
+}
+
+.icon-twitter {
+  margin-bottom: 32px;
+  color: #ffffff;
+}
+
+.icon-github h3 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.icon-linkedin h3 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.icon-twitter h3 {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.icon-github img {
+  display: block;
+  margin: 10px auto;
+  max-width: 200px;
+}
+
+.icon-linkedin img {
+  display: block;
+  margin: 2px auto;
+  max-width: 2px;
+}
+
+.icon-twitter img {
+  display: block;
+  margin: 10px auto;
+  max-width: 150px;
+}
+
+article {
+  margin-bottom: 20px;
+  padding: 75px;
+  height: auto;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background-color: #3c2a7c;
+  color: #ffffff;
+}
+
+article img {
+  max-height: 200px;
+}
+
+
+article h2 {
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+
+form {
+  margin: 0 auto;
+  width: 500px;
+  padding: 10px;
+  border: 5px solid 0e44c;
+  border-radius: 20px;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+}
+  
+input, 
+textarea {
+  box-sizing: border-box;
+  width: 300px;
+  border: 1px solid #10e44c;
+}
+
+textarea {
+  vertical-align: top;
+  height: 60px;
+}
+  
+button {
+  margin-top: 20px;
+  height: 40px;
+  width: 120px;
+  background-color: #10e44c;
+  color: #FDF8F5;
+  margin-left: 40%;
+}
+
+footer {
+  padding: 30px;
+  clear: both;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-align: center;
+}
+
+footer h2 {
+  font-size: 20px;
+}
+
+@media screen and (max-width: 992px)  {
+  header nav,
+  nav,
+  main {
+    flex-direction:column;
+    background: #430a27;
+  }
+  .card {
+    width: 50%;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+  header nav{
+    background: #ff8a98;
+
+  }
+
+  .card {
+    width: 100%;
+  }
+  .work {
+    height: auto;
+  }
+  .column {
+    float: none;
+    padding: 0;
+    width: auto;
+  }
+  .project {
+    display: flex;
+    flex-direction: column;
+  }
+}
